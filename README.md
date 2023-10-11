@@ -8,7 +8,7 @@ The teacher and student functions are integrated into a simple Tkinter GUI with 
 on an online SQL server, making data readily accessible to users anywhere.
 
 *******************************************************************************************************************************************************
-
+![Alt Text](images/1_landingpage.png)
 The start.py consists of functions to open up the main page that leads to Student Login/Student Registration/Teacher Login/Teacher Registration.
 
 It consists of verify_reg() that does the verification of fields during registration of an user(like correct username to strong password).
