@@ -5,11 +5,11 @@ from tkinter import messagebox
 import mysql.connector as m
 from datetime import datetime
 from sample_frames import ScrollableFrame
-db_host='sql3.freemysqlhosting.net'
+db_host='localhost'
 db_port=3306
-db_pwd='BREglSJFnR'
-db_usn='sql3470461'
-db_name='sql3470461'
+db_pwd='root'
+db_usn='root'
+db_name='miniproj'
 def convert(s):
     hr=s//3600
     mi=(s-(hr*3600))//60
@@ -222,10 +222,13 @@ def basetest(*l):
                 try:
                     con=m.connect(host=db_host,port=db_port,user=db_usn,password=db_pwd,database=db_name)       
                     cur=con.cursor()
+                    print("Basic")
                     cur.execute('SELECT * from pending_exams where code="{}"'.format(code))
                     data=cur.fetchall()[0]
                     tea_usn=data[1]
+                    print("HERE Donw!")
                     cur.execute('insert into com_exam(code,usn_tea,usn_stu,answer) values("{}","{}","{}","{}")'.format(code,tea_usn,usn,local))
+                    print("Main Done")
                     con.commit()
                     con.close()
                     messagebox.showinfo('Exam Completed','You have succesfully completed the exam!')
@@ -233,7 +236,7 @@ def basetest(*l):
                     basetest()
                     return False
                 except (m.errors.InterfaceError,m.errors.DatabaseError):
-                    messagebox.showerror('Error','Please Connect to the Internet')
+                    messagebox.showerror('Error 1','Please Connect to the Internet')
                     return False
             clear_frame(fD)
             lb_ques=tk.Label(fD,text='',font=font2)

@@ -8,14 +8,11 @@ import secrets
 import string
 
 from sample_frames import ScrollableFrame
-db_host='sql3.freemysqlhosting.net'
+db_host='localhost'
 db_port=3306
-db_pwd='BREglSJFnR'
-db_usn='sql3470461'
-db_name='sql3470461'
-
-
-
+db_pwd='root'
+db_usn='root'
+db_name='miniproj'
 def clear_frame(*frame):
     for i in frame:
         for widgets in i.winfo_children():
