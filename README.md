@@ -8,7 +8,14 @@ The teacher and student functions are integrated into a simple Tkinter GUI with 
 on an online SQL server, making data readily accessible to users anywhere.
 
 *******************************************************************************************************************************************************
-![Alt Text](images/1_landingpage.png)
+This is the look of the Landing Page and it acts as a platform for both teachers and students.
+<img src="images/1_landingpage.png" alt="Initial Landing page" width="300" height="200">
+This is the registration of the Teacher and the student. The code lies in start.py. It accesses the local db(parametrized in start.py) and finds for stu and tea table.
+<img src="images/2_studentregister.png" alt="Student Registration" width="300" height="200">
+<img src="images/3_teachregister.png" alt="Teacher Registration" width="300" height="200">
+
+*******************************************************************************************************************************************************
+#Modules
 The start.py consists of functions to open up the main page that leads to Student Login/Student Registration/Teacher Login/Teacher Registration.
 
 It consists of verify_reg() that does the verification of fields during registration of an user(like correct username to strong password).
