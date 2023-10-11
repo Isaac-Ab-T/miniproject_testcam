@@ -28,7 +28,7 @@ Teachers have options to :
 <br>
 The above is for creating MCQs with multiple options.
 <br>
-<img src="images/5_teacher_create_entry.png" alt="Teacher Creating Questions" width="600" height="400">
+<img src="images/6_teacher_create_entry.png" alt="Teacher Creating Questions" width="600" height="400">
 <br>
 The above is for creating Entry Based Questions.
 
@@ -37,11 +37,13 @@ The above is for creating Entry Based Questions.
 <br>
 An Exam Code is generated that is not utilized in any of the pending exams.
 <br>
+
 ### Teachers Working on Drafts ###
 <img src="images/7_teacher_draft.png" alt="Teacher Working on Drafts" width="600" height="400">
 <br>
 The drafts are stored locally on files and can be accessed from the last question added.
 <br>
+
 ### Teacher Evaluating Answers ###
 <img src="images/16_teacher_evaluating_sel.png" alt="Teacher Evaluating Landing Page" width="600" height="400">
 <br>
